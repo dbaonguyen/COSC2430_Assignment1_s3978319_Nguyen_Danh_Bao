@@ -1,0 +1,104 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Danh Bao
+ID: s3978319
+Acknowledgement: Acknowledge the resources that you use here. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/book-store-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="btn"></i>
+                <i class="fa-solid fa-xmark" id="cancel"></i>
+            </label>
+            <a href="homepage.html"><img src="assets/img/Logo-website.png" alt="rmit-logo" class="logo"></a>
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="category.html">FICTION</a></li>
+                <li><a href="#">NON-FICTION</a></li>
+                <li><a href="#">TEXTBOOKS</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="contact.html" method="get"></form>
+            <div class="form-container">
+
+                <div class="input-detail">
+                    <label for="contact-purpose">Contact purpose</label>
+                    <select name="contact-purpose" id="">
+                        <option value="">--- Select the contact purpose ---</option>
+                        <option value="buy-book">I want to buy books</option>
+                        <option value="sell-book">I want to sell books</option>
+                    </select>
+                </div>
+                <div class="input-detail">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="input-detail">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="input-detail">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone">
+                </div>
+                <div class="input-detail">
+                    <label for="contact-preference">Contact preference</label>
+                    <label for="by-phone">By Phone</label>
+                    <input type="checkbox" name="by" value="phone">
+                    <label for="by-email">By Email</label>
+                    <input type="checkbox" name="by" value="email">
+                </div>
+                <div class="input-detail">
+                    <label for="receive-weekly-newsletter">Receive weekly newsletter</label>
+                    <input type="radio" id="yes" name="receive-weekly-newsletter" value="Yes" checked>
+                    <label for="html">Yes</label><br>
+                    <input type="radio" id="no" name="receive-weekly-newsletter" value="No">
+                    <label for="css">No</label><br>
+                </div>
+                <div class="input-detail">
+                    <label for="extra-notes">Extra notes</label>
+                    <textarea name="extra-notes" id="extra-notes" cols="30" rows="30"></textarea>
+                </div>
+
+
+            </div>
+            </form>
+        </div>
+    </main>
+    <!-- <footer>
+        <nav>
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">CopyRight</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </footer> -->
+</body>
+
+</html>
