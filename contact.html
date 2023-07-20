@@ -45,11 +45,11 @@ Acknowledgement: Acknowledge the resources that you use here.
             <div class="form-container">
 
                 <div class="input-detail">
-                    <label for="contact-purpose">Contact purpose</label>
+                    <label for="contact-purpose" class="form-lable">Contact purpose</label>
                     <select name="contact-purpose" id="">
-                        <option value="">--- Select the contact purpose ---</option>
-                        <option value="buy-book">I want to buy books</option>
-                        <option value="sell-book">I want to sell books</option>
+                        <option value="" class="contact-value">--- Select the contact purpose ---</option>
+                        <option value="buy-book" class="contact-value">I want to buy books</option>
+                        <option value="sell-book" class="contact-value">I want to sell books</option>
                     </select>
                 </div>
                 <div class="input-detail">
@@ -65,7 +65,7 @@ Acknowledgement: Acknowledge the resources that you use here.
                     <input type="text" name="phone">
                 </div>
                 <div class="input-detail">
-                    <label for="contact-preference">Contact preference</label>
+                    <p>Contact preference</p>
                     <label for="by-phone">By Phone</label>
                     <input type="checkbox" name="by" value="phone">
                     <label for="by-email">By Email</label>
@@ -74,15 +74,18 @@ Acknowledgement: Acknowledge the resources that you use here.
                 <div class="input-detail">
                     <label for="receive-weekly-newsletter">Receive weekly newsletter</label>
                     <input type="radio" id="yes" name="receive-weekly-newsletter" value="Yes" checked>
-                    <label for="html">Yes</label><br>
+                    <label for="html">Yes</label>
                     <input type="radio" id="no" name="receive-weekly-newsletter" value="No">
-                    <label for="css">No</label><br>
+                    <label for="css">No</label>
                 </div>
                 <div class="input-detail">
                     <label for="extra-notes">Extra notes</label>
                     <textarea name="extra-notes" id="extra-notes" cols="30" rows="30"></textarea>
                 </div>
-
+                <div class="submit-button">
+                    <button type="submit">Submit</button>
+                    <button>Reset</button>
+                </div>
 
             </div>
             </form>
