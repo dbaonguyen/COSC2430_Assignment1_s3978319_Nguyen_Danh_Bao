@@ -17,7 +17,6 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #f0f0f0;
 }
-
 /* Header */
 
 .logo {
@@ -147,14 +146,14 @@ footer {
 }
 
 footer nav ul li a {
-  color: white;
+  
   font-size: 20px;
 
   background: linear-gradient(
     to right,
     midnightblue,
     midnightblue 50%,
-    white 50%
+    white  50%
   );
   background-clip: text;
   -webkit-background-clip: text;
