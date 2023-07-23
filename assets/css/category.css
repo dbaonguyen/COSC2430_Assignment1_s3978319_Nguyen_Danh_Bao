@@ -103,9 +103,15 @@ main {
 
 .book {
   width: 200px;
+  height: 320px;
   margin-left: auto;
   margin-right: auto;
   transition: transform 0.5s;
+}
+
+.book-row {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .card:hover img {
@@ -141,10 +147,7 @@ main {
   margin-left: 50px;
 }
 
-.book-row {
-  display: flex;
-  justify-content: space-around;
-}
+
 /* Footer */
 footer {
   margin-top: 50px;

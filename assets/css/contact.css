@@ -120,6 +120,7 @@ h1 {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1.3rem;
   
 }
 
@@ -169,7 +170,7 @@ h1 {
   background-color: #dc3545;
 }
 
-/* Checkbox and Radio Button Styles */
+
 .form-group label input[type="checkbox"],
 .form-group label input[type="radio"] {
   display: inline-block;
@@ -212,14 +213,14 @@ h1 {
   -moz-appearance: none;
 }
 
-/* Checkbox and Radio Button Focus Styles */
+
 .form-group label input[type="checkbox"]:focus-visible::before,
 .form-group label input[type="radio"]:focus-visible::before {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
   outline: none;
 }
 
-/* Checkbox and Radio Button Disabled Styles */
+
 .form-group label input[type="checkbox"]:disabled::before,
 .form-group label input[type="radio"]:disabled::before {
   border-color: #ccc;
