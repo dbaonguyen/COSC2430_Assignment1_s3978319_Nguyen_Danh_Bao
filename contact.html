@@ -41,78 +41,59 @@ Acknowledgement: Acknowledge the resources that you use here.
         </nav>
 
     </header>
-    <main>
-        <h1>CONTACT US</h1>
-        <div class="container">
-            
-            <form action="contact.html" method="get"></form>
-            <div class="form-container">
-
-                <div class="text-inputs-container">
-                    <div class="text-input-col">
-                        <div class="contact-input">
-                            <label for="contact-purpose" class="form-lable">Contact purpose</label>
-                            <select name="contact-purpose" id="">
-                                <option value="" class="contact-value">--- Select the contact purpose ---</option>
-                                <option value="buy-book" class="contact-value">I want to buy books</option>
-                                <option value="sell-book" class="contact-value">I want to sell books</option>
-                            </select>
-                        </div>
-                        <div class="name-input">
-                            <label for="name">Name</label>
-                            <input type="text" name="name">
-                        </div>
-                    </div>
-                    <div class="text-input-col">
-                        <div class="email-input">
-                            <label for="email">Email</label>
-                            <input type="email" name="email">
-                        </div>
-                        <div class="phone-input">
-                            <label for="phone">Phone</label>
-                            <input type="text" name="phone">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="selection-inputs-container">
-                    <div class="selection-input-col">
-                        <p>Contact preference</p>
-                        <div class="checkbox-input">
-                            <input type="checkbox" id="vehicle1" name="choice1" value="Email">
-                            <label for="vehicle1">By Email</label><br>
-                            <input type="checkbox" id="vehicle2" name="choice2" value="Phone">
-                            <label for="vehicle2">By Phone</label><br>
-                        </div>
-                    </div>
-                    <div class="selection-input-col">
-                        <p>Recieve weekly newsletter</p>
-                        <div class="radio-button-input">
-                            <input type="radio" id="yes" name="recieve-weekly-newsletter" value="Yes" checked>
-                            <label for="yes">Yes</label><br>
-                            <input type="radio" id="no" name="recieve-weekly-newsletter" value="No">
-                            <label for="no">No</label><br>   
-                        </div>
-                    </div>
-                </div>
-                <div class="extra-notes-container">
-                    <label for="extra-notes">Extra notes</label><br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="button-container">
-                    <div>
-                        <button type="submit">Submit</button>
-                    </div>
-                    <div>
-                        <button>Reset</button>
-                    </div>
-                </div>
-
+    <div class="container">
+        <main>
+          <h1>CONTACT US</h1>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="contact-purpose">Contact Purpose</label>
+              <select id="contact-purpose" name="contact-purpose">
+                <option value="sell">I want to sell books</option>
+                <option value="buy">I want to buy books</option>
+              </select>
             </div>
-            </form>
-        </div>
-    </main>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <span>Contact Preference</span>
+              <label for="contact-by-email">
+                <input type="checkbox" id="contact-by-email" name="contact-preference" value="email">By email
+              </label>
+              <label for="contact-by-phone">
+                <input type="checkbox" id="contact-by-phone" name="contact-preference" value="phone">By phone
+              </label>
+            </div>
+            <div class="form-group">
+              <span>Receive Weekly Newsletter</span>
+              <label for="newsletter-yes">
+                <input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked>Yes
+              </label>
+              <label for="newsletter-no">
+                <input type="radio" id="newsletter-no" name="newsletter" value="no">No
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="extra-notes">Extra Notes</label>
+              <textarea id="extra-notes" name="extra-notes" rows="4"></textarea>
+            </div>
+            <div class="form-buttons">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </main>
+      </div>
+   
     <footer>
         <nav>
             <ul>

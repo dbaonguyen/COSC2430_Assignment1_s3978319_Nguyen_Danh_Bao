@@ -15,7 +15,7 @@ Acknowledgement: Acknowledge the resources that you use here.  */
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(177deg, #ffd89c 0%, #a2cdb0 80%);
 }
 
 .logo {
@@ -25,7 +25,7 @@ body {
   left: 10%;
 }
 .nav-bar {
-  background-color: #00a5f5;
+  background-color: #f1c27b;
   width: 100%;
   height: 90px;
   position: fixed;
@@ -80,97 +80,172 @@ label #cancel {
   display: none;
 }
 
+
 /* Main */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 main {
-  margin-top: 120px;
+  margin-bottom: 20px;
+  margin-top: 9rem;
 }
 
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
 
-.text-input-col, .selection-inputs-container{
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
   width: 100%;
-}
-
-.text-inputs-container, .selection-inputs-container{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   
 }
-main h1{
-  text-align: center;
+
+.form-group span {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.form-group label input[type="checkbox"],
+.form-group label input[type="radio"] {
+  margin-right: 5px;
 }
 
-.button-container{
+.form-group textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-buttons {
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
-  margin-top: 1.6rem;
 }
 
-label{
-  font-size: 1.35rem;
-}
-
-textarea{
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;
-}
-button{
-  padding: 1.1rem 3rem;
-  border-radius: 10px;
-  background-color: #00a5f5;
-  color: white;
+.form-buttons button {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  font-size: 0.8rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: bold;
-  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form-buttons button[type="reset"] {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+/* Checkbox and Radio Button Styles */
+.form-group label input[type="checkbox"],
+.form-group label input[type="radio"] {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
   cursor: pointer;
 }
 
-.form-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    max-width: 700px;
-    margin-top: 30px;
+.form-group label input[type="checkbox"]::before,
+.form-group label input[type="radio"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
 }
 
-
-
-input[type=text], input[type=email], select {
-  width: 95.5%;
-  padding: 12px 30px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.form-group label input[type="radio"]::before {
+  border-radius: 50%;
 }
 
+.form-group label input[type="checkbox"]:checked::before,
+.form-group label input[type="radio"]:checked::before {
+  border-color: black;
+  background-color: #007bff;
+}
 
+/* Hide the original checkboxes and radios */
+.form-group label input[type="checkbox"],
+.form-group label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
+/* Checkbox and Radio Button Focus Styles */
+.form-group label input[type="checkbox"]:focus-visible::before,
+.form-group label input[type="radio"]:focus-visible::before {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Checkbox and Radio Button Disabled Styles */
+.form-group label input[type="checkbox"]:disabled::before,
+.form-group label input[type="radio"]:disabled::before {
+  border-color: #ccc;
+  background-color: #f7f7f7;
+  cursor: not-allowed;
+}
+
+.form-group label input[type="checkbox"]:checked:disabled::before,
+.form-group label input[type="radio"]:checked:disabled::before {
+  border-color: #ccc;
+  background-color: #ccc;
+}
+
+/* Styling the textarea on focus */
+textarea:focus {
+  border-color: black;
+  box-shadow: 0 0 5px #000;
+}
 
 /* Footer */
 footer {
+  position: sticky;
   margin-top: 50px;
-  background-color: #da70d6;
+  background-color: #85a389;
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
 
 footer nav ul li a {
@@ -194,7 +269,6 @@ footer nav ul li a:hover {
   background-position: 0 100%;
 }
 
-
 footer nav ul {
   margin-right: 25px;
   display: flex;
@@ -207,4 +281,84 @@ footer nav ul li {
   margin: 0 15px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media (max-width: 1118px) {
+  .nav-bar img {
+    left: 6%;
+    top: 20px;
+    width: 130px;
+  }
+  header nav ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 960px) {
+  label #btn {
+    display: block;
+  }
+  .nav-bar ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #f1c27b;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+
+  .nav-bar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .form-buttons button {
+    display: block;
+    width: 100%;
+  }
+
+  .form-buttons button[type="reset"], .form-buttons button[type="submit"] {
+    margin-left: 0;
+    padding-left: 20px;
+    
+  }
+
+  footer {
+    height: 300px;
+    width: 100%;
+  }
+
+  footer nav ul {
+    text-align: end;
+    display: block;
+    float: right;
+  }
+
+  footer nav ul li {
+    margin: 20px 0;
+    line-height: 30px;
+  }
+
+  .nav-bar ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
 }

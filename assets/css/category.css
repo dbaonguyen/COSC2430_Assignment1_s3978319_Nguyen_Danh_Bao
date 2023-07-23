@@ -15,7 +15,7 @@ Acknowledgement: Acknowledge the resources that you use here.  */
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(177deg,#ffd89c 0%, #a2cdb0 80%);
 }
 
 /* Header */
@@ -27,7 +27,7 @@ body {
   left: 10%;
 }
 .nav-bar {
-  background-color: #00a5f5;
+  background-color: #F1C27B;
   width: 100%;
   height: 90px;
   position: fixed;
@@ -93,6 +93,10 @@ main {
   z-index: 1;
 }
 
+.card a{
+  color: purple;
+}
+
 .card-left {
   margin-left: 50px;
 }
@@ -145,7 +149,7 @@ main {
 footer {
   margin-top: 50px;
   height: auto;
-  background-color: #da70d6;
+  background-color: #85A389;
   width: 100%;
 }
 
@@ -206,7 +210,7 @@ footer nav ul li {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #00a5f5;
+    background: #F1C27B;
     top: 80px;
     left: -100%;
     text-align: center;
