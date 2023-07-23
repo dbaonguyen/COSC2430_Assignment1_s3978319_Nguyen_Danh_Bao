@@ -5,12 +5,17 @@ Assessment: Assignment 1
 Author: Nguyen Danh Bao
 ID: s3978319
 Acknowledgement: Acknowledge the resources that you use here.  */
-* {
+*, *::before,
+*::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
