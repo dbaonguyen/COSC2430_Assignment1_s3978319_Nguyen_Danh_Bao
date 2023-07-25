@@ -173,6 +173,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   margin-left: 2rem;
+  width: 100%;
 }
 
 .sub-img {
@@ -279,11 +280,19 @@ footer nav ul li {
     flex-direction: column;
     gap: 1.8rem;
     max-width: 400px;
-    width: 90%;
+    width: 80%;
     height: auto;
     align-self: center;
     overflow: hidden;
     
+  }
+
+  .booking-container {
+    margin-top: 4.3rem;
+    width: 80%;
+    text-align: start;
+    margin-left: 0;
+
   }
 
   .main-img {
@@ -316,13 +325,7 @@ footer nav ul li {
     width: 100%;
   }
 
-  .booking-container {
-    margin-top: 4.3rem;
-    width: 85%;
-    text-align: start;
-    margin-left: 0;
-
-  }
+  
 
   
   .add-button{
@@ -330,11 +333,12 @@ footer nav ul li {
   }
 
   .book-description {
-    width: 90%;
+    width: 80%;
   }
   
   footer {
-    height: 50vh;
+    position: sticky;
+    height: 300px;
     width: 100%;
   }
 

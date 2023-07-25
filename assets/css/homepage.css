@@ -5,8 +5,9 @@ Assessment: Assignment 1
 Author: Nguyen Danh Bao
 ID: s3978319
 Acknowledgement: Acknowledge the resources that you use here.  */
-*, *::before,
-*::after{
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,13 +15,13 @@ Acknowledgement: Acknowledge the resources that you use here.  */
   list-style: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background: linear-gradient(177deg,#ffd89c 0%, #a2cdb0 80%);
+  background: linear-gradient(177deg, #ffd89c 0%, #a2cdb0 80%);
 }
 /* Header */
 
@@ -31,7 +32,7 @@ body {
   left: 10%;
 }
 .nav-bar {
-  background-color: #F1C27B;
+  background-color: #f1c27b;
   width: 100%;
   height: 90px;
   position: fixed;
@@ -89,27 +90,25 @@ main {
   margin-top: 120px;
 }
 
-
-
 .card {
-  width: 200px;
+  width: 230px;
   z-index: 1;
+  
 }
 
 .book-row {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 .book {
-  max-width: 300px;
+  
   transition: transform 0.5s;
   max-height: 500px;
-  height: 80%;
+  height: 83%;
   width: 100%;
-  
-  
+  border: 25px solid #B88846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
 }
 
 .card:hover img {
@@ -120,13 +119,10 @@ main {
 .card h2 {
   text-align: center;
   margin-top: 10px;
-  
 }
-.card a{
+.card a {
   color: purple;
 }
-
-
 
 .container,
 .video-container {
@@ -150,24 +146,22 @@ main {
   margin-left: 50px;
 }
 
-
 /* Footer */
 footer {
   margin-top: 50px;
   height: auto;
-  background-color: #85A389;
+  background-color: #85a389;
   width: 100%;
 }
 
 footer nav ul li a {
-  
   font-size: 20px;
 
   background: linear-gradient(
     to right,
     midnightblue,
     midnightblue 50%,
-    white  50%
+    white 50%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -208,7 +202,6 @@ footer nav ul li {
 }
 
 @media (max-width: 960px) {
-  
   label #btn {
     display: block;
   }
@@ -216,44 +209,45 @@ footer nav ul li {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #F1C27B;
+    background: #f1c27b;
     top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
     z-index: 10;
   }
+  .container{
+    margin-top: 60px;
+  }
 
-  
-  .container h1{
-    
-    margin-left: auto;  
-    margin-right: auto;    
+  .container h1 {
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
   .book-row {
-    
-    flex-direction: column;
+    /* flex-direction: column;
     width: 100%;
-    align-items: center;
-    
-    
+    align-items: center; */
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5rem;
   }
-  
 
   .card {
-    margin: 20px 0;
-    width: 200px;
-
-
-    
+    margin: 30px 0;
+    width: 250px;
   }
-  .book{
+  .card h2{
+    font-size: 30px;
+  }
+
+ 
+  .book {
     width: 100%;
     height: 100%;
-    
   }
-  
+
   .nav-bar ul li {
     display: block;
     margin: 50px 0;
@@ -264,20 +258,17 @@ footer nav ul li {
     height: 300px;
     width: 100%;
   }
-  
- 
 
   footer nav ul {
     text-align: end;
     display: block;
     float: right;
-    
   }
 
   footer nav ul li {
     margin: 20px 0;
     line-height: 30px;
-  } 
+  }
 
   .nav-bar ul li a {
     font-size: 20px;
@@ -286,15 +277,15 @@ footer nav ul li {
   #check:checked ~ ul {
     left: 0;
   }
-  .video-container{
+  .video-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  iframe{
+
+  iframe {
     margin-top: 30px;
-    width: 100%;
+    width: 70%;
   }
 
   #check:checked ~ label #btn {
@@ -302,5 +293,25 @@ footer nav ul li {
   }
   #check:checked ~ label #cancel {
     display: block;
+  }
+}
+
+@media (max-width: 457px) {
+  .book-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: 0;
+  }
+  
+  .container{
+    margin-top: 0;
+  }
+
+
+  .book {
+    width: 100%;
+    height: 100%;
   }
 }

@@ -337,9 +337,13 @@ footer nav ul li {
     
   }
 
+  
+
+
   footer {
     height: 300px;
     width: 100%;
+    position: sticky;
   }
 
   footer nav ul {
