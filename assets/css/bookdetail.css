@@ -108,13 +108,13 @@ main {
 
 .content-container {
   display: flex;
-  width: 60%;
+  width: 80%;
   margin: 1.5rem auto;
   
 }
 
 .book-description {
-  width: 60%;
+  width: 80%;
   margin: 1.5rem auto;
 }
 

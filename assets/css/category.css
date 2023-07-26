@@ -106,7 +106,7 @@ main {
 }
 
 .book {
-  
+  box-shadow: #85a389 0px 3px 8px;
   transition: transform 0.5s;
   max-height: 500px;
   height: 83%;
