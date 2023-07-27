@@ -80,6 +80,7 @@ label #cancel {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+
 }
 
 #check {
@@ -91,7 +92,7 @@ main {
 }
 
 .card {
-  width: 230px;
+  width: 220px;
   z-index: 1;
   
 }
