@@ -207,7 +207,7 @@ footer nav ul li {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   label #btn {
     display: block;
   }
@@ -302,7 +302,7 @@ footer nav ul li {
   }
 }
 
-@media (max-width: 557px) {
+@media (max-width: 768px) {
   .book-row {
     display: flex;
     flex-direction: column;
