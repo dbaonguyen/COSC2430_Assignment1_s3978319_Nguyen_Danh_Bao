@@ -93,7 +93,7 @@ main {
 }
 
 .card {
-  width: 300px;
+  width: 280px;
   z-index: 1;
 }
 
@@ -101,9 +101,6 @@ main {
   color: purple;
 }
 
-.card-left {
-  margin-left: 50px;
-}
 
 .book {
   box-shadow: #85a389 0px 3px 8px;
