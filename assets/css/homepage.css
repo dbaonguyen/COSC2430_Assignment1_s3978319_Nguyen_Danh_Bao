@@ -90,9 +90,12 @@ label #cancel {
 main {
   margin-top: 120px;
 }
+.container a{
+  color: black;
+}
 
 .card {
-  width: 220px;
+  width: 300px;
   z-index: 1;
   
 }
