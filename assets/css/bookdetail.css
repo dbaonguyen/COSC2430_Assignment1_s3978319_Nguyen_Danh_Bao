@@ -172,7 +172,7 @@ main {
   width: 70%;
 }
 
-.book-description h1 {
+ .book-description-title {
   font-weight: bold;
   font-size: 35px;
 }
@@ -188,7 +188,7 @@ main {
 }
 
 .book-author {
-  font-size: 1.5rem;
+  
   margin-bottom: 20px;
 }
 

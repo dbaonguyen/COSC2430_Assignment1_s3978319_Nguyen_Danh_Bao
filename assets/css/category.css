@@ -101,7 +101,9 @@ main {
   color: purple;
 }
 
-
+.link-sub-category{
+  color: black;
+}
 .book {
   box-shadow: #85a389 0px 3px 8px;
   transition: transform 0.5s;
@@ -116,6 +118,7 @@ main {
 .book-row {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .card:hover img {
