@@ -106,11 +106,11 @@ h1 {
   color: black;
 }
 
-.form-group {
+.form-group, .checkbox-form-group {
   margin-bottom: 20px;
 }
 
-.form-group label {
+.checkbox-form-group,.form-group label {
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
@@ -128,7 +128,7 @@ h1 {
   font-size: 1.3rem;
 }
 
-.form-group span {
+.checkbox-form-group span {
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
@@ -136,8 +136,8 @@ h1 {
   color: black;
 }
 
-.form-group label input[type="checkbox"],
-.form-group label input[type="radio"] {
+.checkbox-form-group label input[type="checkbox"],
+.checkbox-form-group label input[type="radio"] {
   margin-right: 5px;
 }
 
@@ -157,7 +157,10 @@ h1 {
 }
 
 
-
+.checkbox-form-group{
+  display: flex;
+  flex-direction: column;
+}
 
 
 .form-buttons button {
@@ -180,8 +183,8 @@ h1 {
   background-color: #dc3545;
 }
 
-.form-group label input[type="checkbox"],
-.form-group label input[type="radio"] {
+.checkbox-form-group label input[type="checkbox"],
+.checkbox-form-group label input[type="radio"] {
   display: inline-block;
   position: relative;
   width: 20px;
@@ -190,8 +193,8 @@ h1 {
   cursor: pointer;
 }
 
-.form-group label input[type="checkbox"]::before,
-.form-group label input[type="radio"]::before {
+.checkbox-form-group label input[type="checkbox"]::before,
+.checkbox-form-group label input[type="radio"]::before {
   content: "";
   display: block;
   position: absolute;
@@ -204,39 +207,39 @@ h1 {
   transition: border-color 0.3s ease;
 }
 
-.form-group label input[type="radio"]::before {
+.checkbox-form-group label input[type="radio"]::before {
   border-radius: 50%;
 }
 
-.form-group label input[type="checkbox"]:checked::before,
-.form-group label input[type="radio"]:checked::before {
+.checkbox-form-group label input[type="checkbox"]:checked::before,
+.checkbox-form-group label input[type="radio"]:checked::before {
   border-color: black;
   background-color: #007bff;
 }
 
 /* Hide the original checkboxes and radios */
-.form-group label input[type="checkbox"],
-.form-group label input[type="radio"] {
+.checkbox-form-group label input[type="checkbox"],
+.checkbox-form-group label input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.form-group label input[type="checkbox"]:focus-visible::before,
-.form-group label input[type="radio"]:focus-visible::before {
+.checkbox-form-group label input[type="checkbox"]:focus-visible::before,
+.checkbox-form-group label input[type="radio"]:focus-visible::before {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
   outline: none;
 }
 
-.form-group label input[type="checkbox"]:disabled::before,
-.form-group label input[type="radio"]:disabled::before {
+.checkbox-form-group label input[type="checkbox"]:disabled::before,
+.checkbox-form-group label input[type="radio"]:disabled::before {
   border-color: #ccc;
   background-color: #f7f7f7;
   cursor: not-allowed;
 }
 
-.form-group label input[type="checkbox"]:checked:disabled::before,
-.form-group label input[type="radio"]:checked:disabled::before {
+.checkbox-form-group label input[type="checkbox"]:checked:disabled::before,
+.checkbox-form-group label input[type="radio"]:checked:disabled::before {
   border-color: #ccc;
   background-color: #ccc;
 }
@@ -339,7 +342,12 @@ footer nav ul li {
     padding-left: 20px;
   }
 
-
+  .checkbox-form-group{
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  
+  
 
   footer {
     height: 300px;
