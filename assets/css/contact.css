@@ -156,6 +156,10 @@ h1 {
   justify-content: space-around;
 }
 
+
+
+
+
 .form-buttons button {
   padding: 15px 25px;
   background-color: #007bff;
@@ -334,6 +338,8 @@ footer nav ul li {
     margin-left: 0;
     padding-left: 20px;
   }
+
+
 
   footer {
     height: 300px;
