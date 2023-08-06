@@ -193,7 +193,7 @@ main {
 }
 
 .book-price {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -308,11 +308,13 @@ footer nav ul li {
     text-align: center;
     transition: all 0.5s;
     z-index: 10;
+    overflow-x: auto;
+    
   }
 
   .nav-bar ul li {
     display: block;
-    margin: 50px 0;
+    margin: 30px 0;
     line-height: 30px;
   }
 
@@ -324,6 +326,7 @@ footer nav ul li {
     height: auto;
     align-self: center;
     overflow: hidden;
+
   }
 
   .booking-container {
