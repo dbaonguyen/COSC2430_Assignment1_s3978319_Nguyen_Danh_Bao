@@ -5,6 +5,7 @@ Assessment: Assignment 1
 Author: Nguyen Danh Bao
 ID: s3978319
 Acknowledgement: Acknowledge the resources that you use here.  */
+@import url('https://fonts.googleapis.com/css2?family=Ruwudu&family=Satisfy&display=swap');
 *,
 *::before,
 *::after {
@@ -20,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Ruwudu', serif;
   background: linear-gradient(177deg, #ffd89c 0%, #a2cdb0 80%);
 }
 

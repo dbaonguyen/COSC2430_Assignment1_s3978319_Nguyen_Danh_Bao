@@ -1,0 +1,12 @@
+.about-description{
+    font-size: 1.55rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+    width: 70%;
+    
+}
+
