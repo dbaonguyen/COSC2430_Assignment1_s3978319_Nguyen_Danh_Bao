@@ -235,7 +235,7 @@ footer nav ul li {
   }
   .book {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .nav-bar ul li {
