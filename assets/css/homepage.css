@@ -296,6 +296,8 @@ footer nav ul li {
     width: 70%;
   }
 
+  
+
   #check:checked ~ label #btn {
     display: none;
   }
